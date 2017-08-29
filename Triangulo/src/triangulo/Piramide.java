@@ -1,14 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package triangulo;
 
-/**
- *
- * @author internet
- */
+import java.util.Scanner;
+
 public class Piramide {
     
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        System.out.printf("Determine o tamanho da figura:");
+        int N = entrada.nextInt();
+        int L=0, C =0;
+        for(L=0;L < N;L++){
+           for (C=0;C<(N *2-1);C++){
+               if (L + C >=N-1)
+               System.out.printf("* ");
+                else
+               System.out.printf("  "); 
+               
+           } 
+            System.out.println("");
+        }
+               
+    }
 }
