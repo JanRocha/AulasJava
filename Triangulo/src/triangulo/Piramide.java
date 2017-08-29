@@ -15,6 +15,8 @@ public class Piramide {
                System.out.printf("* ");
                 else
                System.out.printf("  "); 
+               //janailson
+               
                
            } 
             System.out.println("");
