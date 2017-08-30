@@ -11,11 +11,11 @@ public class Piramide {
         int L=0, C =0;
         for(L=0;L < N;L++){
            for (C=0;C<(N *2-1);C++){
-               if (L + C >=N-1)
+               if ((L + C >=N-1)^(C>=N+L))
                System.out.printf("* ");
                 else
                System.out.printf("  "); 
-               
+             
            } 
             System.out.println("");
         }
